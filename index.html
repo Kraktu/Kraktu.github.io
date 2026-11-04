@@ -4,36 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site des cours de Philip</title>
+    <title>Cours de programmation de Philip Dupont</title>
     <link rel="stylesheet" href="./style/index.css">
+    <style>
+        .featured {
+            margin: 0 1em 3em;
+            padding: 1.5em 2em;
+            border: 3px solid gold;
+            border-radius: 12px;
+            background-color: rgba(255, 215, 0, 0.08);
+        }
+        .featured h2 { text-decoration: none; padding-bottom: 0.5em; }
+        .featured p { padding-bottom: 1em; line-height: 1.5; }
+        .featured ul { list-style: none; }
+        .featured li { padding-top: 0.6em; }
+        .button {
+            display: inline-block;
+            padding: 0.6em 1.2em;
+            border-radius: 8px;
+            background-color: gold;
+            color: rgb(0, 0, 75);
+            font-weight: bold;
+        }
+        .button:hover, .button:focus {
+            background-color: white;
+            color: rgb(0, 0, 75);
+            text-decoration: none;
+        }
+        .older { padding: 0 1em; }
+        .older > p { padding-bottom: 1.5em; font-size: 0.8em; color: wheat; }
+    </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Liste des différents cours</h1>
+    <main class="content">
+        <h1>Cours de programmation de Philip Dupont</h1>
 
-        <div class="row">
-            <div class="twoColumn">
-                <h2>Cours d'Informatique :</h2>
-                <ul>
-                    <li><a href="./Content/AccueilVSCode.html">VSCode</a></li>
-                </ul>
-            </div>
+        <section class="featured" aria-labelledby="nouveau-site">
+            <h2 id="nouveau-site">Le site de cours actuel</h2>
+            <p>Les cours de la formation Blindcode (Eqla) dans leur version la plus récente : HTML, CSS, PHP, Git, accessibilité et environnements de développement, publiés depuis Obsidian et pensés pour la lecture au lecteur d'écran.</p>
+            <ul>
+                <li><a class="button" href="./Blindcode/output/html/Tutoriels/accueil-tutoriels.html">Ouvrir les cours Blindcode</a></li>
+                <li><a href="./Symbiose/output/html/cr%C3%A9ations/symbiose/accueil-symbiose.html">Voir aussi la documentation de game design du jeu Symbiose</a></li>
+            </ul>
+        </section>
 
-            <div class="twoColumn">
-                <h2>Cours de Programmation :</h2>
-                <ul>
-                    <li><p><a href="./Content/AccueilJS.html">Javascript</a></p></li>
-                    <li><p><a href="./Content/AccueilJava.html">Java</a></p></li>
-                    <li><p><a href="./Content/AcceuilPHP.html">PHP</a></p></li>
-                </ul>
+        <section class="older" aria-labelledby="premiers-cours">
+            <h2 id="premiers-cours">Premiers cours (archive)</h2>
+            <p>La toute première version des cours, conservée pour archive.</p>
+            <div class="row">
+                <div class="twoColumn">
+                    <h3>Cours d'informatique</h3>
+                    <ul>
+                        <li><a href="./Content/AccueilVSCode.html">VSCode</a></li>
+                    </ul>
+                </div>
+
+                <div class="twoColumn">
+                    <h3>Cours de programmation</h3>
+                    <ul>
+                        <li><a href="./Content/AccueilJS.html">JavaScript</a></li>
+                        <li><a href="./Content/AccueilJava.html">Java</a></li>
+                        <li><a href="./Content/AcceuilPHP.html">PHP</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>    
-    </div>
-        
-        
+        </section>
+    </main>
+
     <footer>
-        Cours de la formation Blindcode - <a href="https://be.linkedin.com/in/philip-dupont-72b58b1a4" target="_blank">Philip Dupont</a> - <a href="https://eqla.be/">Eqla</a>
+        Cours de la formation Blindcode - <a href="https://www.linkedin.com/in/philip-dupont-dev/" target="_blank" rel="noopener">Philip Dupont</a> - <a href="https://eqla.be/" target="_blank" rel="noopener">Eqla</a>
     </footer>
-
 </body>
 </html>
